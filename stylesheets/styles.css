@@ -1,0 +1,268 @@
+.react-scrollable-list {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  border: #ddd solid 1px;
+  height: 100%;
+  width: 100%
+}
+
+.react-scrollable-list-item-header{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 50px;
+  padding: 10px;
+  background-color: #e5e5e5;
+  height: 30px;
+  stroke: grey;
+  font-style: bold;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  border-bottom: #ddd solid 1px;
+  pointer-events: none;
+}
+
+.react-scrollable-list-item-header div text {
+  font-style: bold;
+  width: auto;
+  height: auto;
+  pointer-events: none;
+}
+
+.react-scrollable-list-item-alt {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 30px;
+  padding: 5px;
+  background-color: #eeeeee;
+  border-bottom: #ddd solid 1px;
+  pointer-events: none;
+}
+
+.react-scrollable-list-item {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 30px;
+  padding: 5px;
+  background-color: #ffffff;
+  border-bottom: #ddd solid 1px;
+  pointer-events: none;
+}
+
+/* .modal-backdrop {
+    background-color: grey;
+    opacity: 0.2 !important;
+    filter: alpha(opacity=50) !important;
+} */
+.modal-backdrop.fade{
+	opacity:0;
+	filter:alpha(opacity=0)
+}
+.modal-backdrop.in{
+	opacity: 0.2 !important;
+	background-color: grey;
+    filter: alpha(opacity=20) !important;
+}
+
+.dbModalCloseButton {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+.closeClassName {
+    -moz-box-shadow:inset 0px 3px 24px -1px #eeeeee;
+    -webkit-box-shadow:inset 0px 3px 24px -1px #eeeeee;
+    box-shadow:inset 0px 3px 24px -1px #eeeeee;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #eeeeee), color-stop(1, #e5e5e5e5) );
+    background:-moz-linear-gradient( center top, #ffffff 5%, #eeeeee 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee');
+    background-color:#ffffff;
+    -webkit-border-top-left-radius:20px;
+    -moz-border-radius-topleft:20px;
+    border-top-left-radius:20px;
+    -webkit-border-top-right-radius:20px;
+    -moz-border-radius-topright:20px;
+    border-top-right-radius:20px;
+    -webkit-border-bottom-right-radius:20px;
+    -moz-border-radius-bottomright:20px;
+    border-bottom-right-radius:20px;
+    -webkit-border-bottom-left-radius:20px;
+    -moz-border-radius-bottomleft:20px;
+    border-bottom-left-radius:20px;
+    text-indent:0px;
+    border:1px solid #eeeeee;
+    display:inline-block;
+    color:grey;
+    font-family:Arial;
+    font-size:28px;
+    font-weight:bold;
+    font-style:normal;
+    height:32px;
+    line-height:32px;
+    width:32px;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 1px 0px #cc9f52;
+    float:right;
+    cursor:pointer;
+}
+.closeClassName:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #eeeeee) );
+    background:-moz-linear-gradient( center top, #ffffff 5%, #eeeeee 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee');
+    background-color:grey;
+    color:black;
+}
+
+.closeClassName:active {
+    position:relative;
+    top:1px;
+}
+
+.arc {
+	opacity: 1.0;
+}
+.arc-hover {
+	opacity: 0.5;
+}
+
+.txt-hover {
+	font-weight: bold;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font-family: sans-serif;
+  font-size: 11px;
+}
+
+.tick text {
+	font-size: 12px;
+}
+
+.tick line {
+	opacity: 0.2;
+}
+
+.grid .tick {
+    stroke: #333333;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
+}
+.grid path {
+    stroke-width: 0.75;
+}
+
+.d3 {
+  font: 10px sans-serif;
+  border: 1px solid #555;
+}
+
+.d3-point {
+  fill: #2B8FF3;
+  stroke: #1D5FA2;
+  stroke-width: 2;
+}
+
+.tooltip {
+    opacity:0;
+    transition: opacity 0.3s;
+    position: absolute;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+}
+g.tooltip rect {
+    fill: white;
+    stroke: grey;
+    padding: 10px;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+/* #dbTooltip {
+    background: lightblue;
+    border: gray;
+    position: absolute;
+    max-width: 8em;
+    text-align:center;
+} */
+
+#dbTooltip.show {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+#dbTooltip.hidden {
+     display: none;
+}
+
+.chart rect {
+  fill: steelblue;
+}
+
+.chart text {
+  fill: black;
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+.bar {
+  fill: steelblue;
+}
+.x.axis path {
+  display: none;
+}
+.dbAlert {
+	padding: 5px 35px 5px 10px;
+	margin-bottom: 5px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+.dbAlert-danger {
+	background-color: #f2dede;
+	border-color: #eed3d7;
+	color: #b94a48;
+}
+.dbAlert-dismissable {
+	padding-right: 35px;
+}
+.dbAlert div {
+	display: block;
+}
+.dbAlert h4 {
+	display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.dbAlert button span {
+	display: none;
+}
